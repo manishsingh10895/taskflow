@@ -1,0 +1,64 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "debugpy",
+            "request": "launch",
+            "name": "Launch Auth Service",
+            "program": "${workspaceFolder}/services/auth/app/main.py",
+            "cwd": "${workspaceFolder}/services/auth/app",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "debugpy",
+            "request": "launch",
+            "name": "Launch Gateway Service",
+            "program": "${workspaceFolder}/services/gateway/app/main.py",
+            "cwd": "${workspaceFolder}/services/gateway/app",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "debugpy",
+            "request": "launch",
+            "name": "Launch Notification Service",
+            "program": "${workspaceFolder}/services/notification/app/main.py",
+            "cwd": "${workspaceFolder}/services/notification/app",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "debugpy",
+            "request": "launch",
+            "name": "Launch Project Service",
+            "program": "${workspaceFolder}/services/project/app/main.py",
+            "cwd": "${workspaceFolder}/services/project/app",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "debugpy",
+            "request": "launch",
+            "name": "Launch Task Service",
+            "program": "${workspaceFolder}/services/task/app/main.py",
+            "cwd": "${workspaceFolder}/services/task/app",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "debugpy",
+            "request": "launch",
+            "name": "Launch User Service",
+            "program": "${workspaceFolder}/services/user/app/main.py",
+            "cwd": "${workspaceFolder}/services/user/app",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "debugpy",
+            "request": "launch",
+            "name": "Launch Worker Service",
+            "program": "${workspaceFolder}/worker/app/main.py",
+            "cwd": "${workspaceFolder}/worker/app",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
