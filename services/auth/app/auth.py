@@ -5,6 +5,7 @@ from jose import jwt
 from passlib.context import CryptContext
 import os
 from dotenv import load_dotenv
+from logger import logger
 
 load_dotenv(dotenv_path=Path(__file__).parent.parent / ".env")
 
@@ -32,3 +33,14 @@ def create_access_token(data: dict, expires_delta: timedelta | None = None):
 
 def decode_token(token: str):
     return jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+
+def get_token_payload(token: str):
+    try:
+        payload = decode_token(token)
+        email = payload.get("sub")
+        if email is None:
+            return None
+        return email
+    except jwt.JWTError:
+        logger.error("Token is invalid")
+        return None

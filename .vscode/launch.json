@@ -5,12 +5,50 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
             "type": "debugpy",
             "request": "launch",
             "name": "Launch Auth Service",
-            "program": "${workspaceFolder}/services/auth/app/main.py",
+            "python": "python3",
+            "program": "${workspaceFolder}/services/auth/app/serve.py",
             "cwd": "${workspaceFolder}/services/auth/app",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Launch Auth GRPC Service",
+            "program": "cargo",
+            "cwd": "${workspaceFolder}/services/auth_grpc",
+            "args": [
+                "run",
+                "--bin",
+                "auth_grpc",
+                "--",
+                "--log-level=debug"
+            ],
+            "env": {
+                "RUST_LOG": "debug"
+            },
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Launch Task GRPC Service",
+            "program": "cargo",
+            "cwd": "${workspaceFolder}/services/task_grpc",
+            "args": [
+                "run",
+                "--bin",
+                "task_grpc",
+                "--",
+                "--log-level=debug"
+            ],
+            "env": {
+                "RUST_LOG": "debug"
+            },
         },
         {
             "type": "debugpy",
@@ -21,18 +59,24 @@
             "envFile": "${workspaceFolder}/.env"
         },
         {
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
             "type": "debugpy",
             "request": "launch",
             "name": "Launch Notification Service",
-            "program": "${workspaceFolder}/services/notification/app/main.py",
+            "program": "${workspaceFolder}/services/notification/app/serve.py",
             "cwd": "${workspaceFolder}/services/notification/app",
             "envFile": "${workspaceFolder}/.env"
         },
         {
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
             "type": "debugpy",
             "request": "launch",
             "name": "Launch Project Service",
-            "program": "${workspaceFolder}/services/project/app/main.py",
+            "program": "${workspaceFolder}/services/project/app/serve.py",
             "cwd": "${workspaceFolder}/services/project/app",
             "envFile": "${workspaceFolder}/.env"
         },
@@ -45,10 +89,13 @@
             "envFile": "${workspaceFolder}/.env"
         },
         {
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
             "type": "debugpy",
             "request": "launch",
             "name": "Launch User Service",
-            "program": "${workspaceFolder}/services/user/app/main.py",
+            "program": "${workspaceFolder}/services/user/app/serve.py",
             "cwd": "${workspaceFolder}/services/user/app",
             "envFile": "${workspaceFolder}/.env"
         },

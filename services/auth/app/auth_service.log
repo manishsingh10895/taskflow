@@ -1,0 +1,31 @@
+2025-04-18 19:53:09,483 - auth_service_logger - INFO - This is an info message
+2025-04-18 19:53:09,483 - auth_service_logger - WARNING - This is a warning message
+2025-04-18 19:53:09,483 - auth_service_logger - ERROR - This is an error message
+2025-04-18 19:53:09,483 - auth_service_logger - CRITICAL - This is a critical message
+2025-04-18 19:54:50,261 - auth_service_logger - INFO - Registering new user
+2025-04-18 19:54:50,261 - auth_service_logger - INFO - email='manish@gmail.com' username='s_mash10' password='terminator'
+2025-04-18 19:55:49,424 - auth_service_logger - INFO - Registering new user
+2025-04-18 19:55:49,425 - auth_service_logger - INFO - email='manish@gmail.com' username='s_mash10' password='terminator'
+2025-04-18 20:44:35,639 - auth_service_logger - INFO - Registering new user
+2025-04-18 20:44:35,639 - auth_service_logger - INFO - email='manish@gmail.com' username='s_mash10' password='terminator'
+2025-04-18 20:53:25,397 - auth_service_logger - INFO - Getting current user
+2025-04-18 20:53:25,397 - auth_service_logger - INFO - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJtYW5pc2hAZ21haWwuY29tIiwiZXhwIjoxNzQ1MDEwMDg3fQ.l3Q3Sc8pATQlauWP86qFmc13bpMoL6AKEsXY3cVKBeY
+2025-04-18 20:55:21,521 - auth_service_logger - INFO - Getting current user
+2025-04-18 20:55:21,521 - auth_service_logger - INFO - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJtYW5pc2hAZ21haWwuY29tIiwiZXhwIjoxNzQ1MDEwMDg3fQ.l3Q3Sc8pATQlauWP86qFmc13bpMoL6AKEsXY3cVKBeY
+2025-04-18 20:55:21,528 - auth_service_logger - INFO - (<models.User object at 0x109015f70>,)
+2025-04-18 20:55:50,878 - auth_service_logger - INFO - Getting current user
+2025-04-18 20:55:50,878 - auth_service_logger - INFO - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJtYW5pc2hAZ21haWwuY29tIiwiZXhwIjoxNzQ1MDEwMDg3fQ.l3Q3Sc8pATQlauWP86qFmc13bpMoL6AKEsXY3cVKBeY
+2025-04-18 20:55:50,888 - auth_service_logger - INFO - (<models.User object at 0x105727470>,)
+2025-04-18 20:56:50,052 - auth_service_logger - INFO - Getting current user
+2025-04-18 20:56:50,052 - auth_service_logger - INFO - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJtYW5pc2hAZ21haWwuY29tIiwiZXhwIjoxNzQ1MDEwMDg3fQ.l3Q3Sc8pATQlauWP86qFmc13bpMoL6AKEsXY3cVKBeY
+2025-04-18 20:56:50,069 - auth_service_logger - INFO - (<models.User object at 0x11eb9c5f0>,)
+2025-04-18 20:57:06,911 - auth_service_logger - INFO - Getting current user
+2025-04-18 20:57:06,911 - auth_service_logger - INFO - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJtYW5pc2hAZ21haWwuY29tIiwiZXhwIjoxNzQ1MDEwMDg3fQ.l3Q3Sc8pATQlauWP86qFmc13bpMoL6AKEsXY3cVKBeY
+2025-04-18 21:00:48,907 - auth_service_logger - INFO - Getting current user
+2025-04-18 21:00:48,908 - auth_service_logger - INFO - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJtYW5pc2hAZ21haWwuY29tIiwiZXhwIjoxNzQ1MDEwMDg3fQ.l3Q3Sc8pATQlauWP86qFmc13bpMoL6AKEsXY3cVKBeY
+2025-04-18 21:00:53,011 - auth_service_logger - INFO - <models.User object at 0x10b29c8f0>
+2025-04-25 16:06:29,182 - auth_service_logger - INFO - Registering new user
+2025-04-25 16:06:29,182 - auth_service_logger - INFO - email='manish@gmail.com' username='s_mash10' password='terminator'
+2025-04-25 16:06:51,200 - auth_service_logger - INFO - Getting current user
+2025-04-25 16:06:51,201 - auth_service_logger - INFO - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJtYW5pc2hAZ21haWwuY29tIiwiZXhwIjoxNzQ1NTk4MDg5fQ.nkP-tV7uGTvChXwD1OUD-L7kSqfdv9WFMAI1MxE6z8o
+2025-04-25 16:06:58,168 - auth_service_logger - INFO - <shared.models.User object at 0x114be0f50>

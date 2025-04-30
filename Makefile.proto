@@ -1,0 +1,41 @@
+# Set proto file and output dirs
+PROTO_DIR=proto
+PROTO_FILE=$(PROTO_DIR)/auth.proto
+TASK_PROTO_FILE=$(PROTO_DIR)/task.proto
+
+PY_OUT_DIR=shared/grpc
+RUST_OUT_DIR=services/auth_grpc
+RUST_TASK_OUT_DIR=services/task_grpc
+
+# Command: make proto-py
+proto-py:
+	@echo "🧬 Compiling proto for Python..."
+	python -m grpc_tools.protoc \
+		-I=$(PROTO_DIR) \
+		--python_out=$(PY_OUT_DIR) \
+		--grpc_python_out=$(PY_OUT_DIR) \
+		$(PROTO_FILE)
+
+proto-py-task:
+	@echo "🧬 Compiling proto for Python (task)..."
+	python -m grpc_tools.protoc \
+		-I=$(PROTO_DIR) \
+		--python_out=$(PY_OUT_DIR) \
+		--grpc_python_out=$(PY_OUT_DIR) \
+		$(TASK_PROTO_FILE)
+
+# Command: make proto-rust
+proto-rust:
+	@echo "🦀 Compiling proto for Rust..."
+	cd $(RUST_OUT_DIR) && cargo build
+
+proto-rust-task:
+	@echo "🦀 Compiling proto for Rust (task)..."
+	cd $(RUST_TASK_OUT_DIR) && cargo build
+
+# Command: make proto (both)
+proto: proto-py proto-rust proto-py-task proto-rust-task
+	@echo "✅ Proto compiled for both Python and Rust."
+
+proto-task: proto-py-task proto-rust-task
+	@echo "✅ Proto compiled for both Python and Rust (task)."

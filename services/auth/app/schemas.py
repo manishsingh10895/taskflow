@@ -16,3 +16,11 @@ class Token(BaseModel):
 class UserLogin(BaseModel):
     username: str
     password: str
+
+class User(BaseModel):
+    id: int
+    email: EmailStr
+    username: str
+
+    class Config:
+        orm_mode = True
